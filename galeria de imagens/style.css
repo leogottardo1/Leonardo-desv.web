@@ -12,11 +12,10 @@ header {
   justify-content: space-between; /*So funciona com display flex */
   padding: 10px;
 }
-#box-ordenar button{
-  background-color:color greenyellow;
-
+#box-ordenar button {
+  background-color: color greenyellow;
 }
-#box-categorias button{
+#box-categorias button {
   background-color: #4caf50;
 }
 #box-categorias button,
