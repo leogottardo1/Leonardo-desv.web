@@ -1,6 +1,6 @@
 //o vento DOM é acionado quando todo o HTML foi completamente carregado
 document.addEventListener("DOMContentLoaded", function () {
-    alert(123);
+    //alert(123);
   
     //tipos de dados
   //String: Sequencia de caracter
@@ -22,13 +22,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const notaMedia = 6;
 if (notaMedia >= 6) {
-  alert("aluno passou");
+  //alert("aluno passou");
 }
 else if (notaMedia >= 4 && notaMedia < 6) {
-  alert("aluno quase passou");
+  //alert("aluno quase passou");
 }
 else {
-  alert("aluno reprovou!");
+  //alert("aluno reprovou!");
 }
 
 
@@ -44,7 +44,7 @@ else {
 
 const num = "6";
 if ( num === 6) {
-  alert(" é igual");
+  //alert(" é igual");
 } 
 else {
   alert(" o tipo de dado é diferente");
@@ -56,5 +56,51 @@ if(professor == "Lucas") {
 } else {
   console.log('Não é Lucas')
 }
+
+
+//-----------------------------------------/-----------------------------------------------------------
+
+//Funções são blocos de codigo que podem ser chamados e reutilizados
+//Dentro dos parenteses da função vai os parâmetros/propriedades
+
+function primeiraFuncao() {
+  
+  return parametro + ',' + segundoparametro; //variaveis concatenadas
+
+}
+
+const parametro = "essa é uma função com parametro";
+const segundoparametro = "agora com dois parametros";
+
+console.log(primeiraFuncao(parametro, segundoparametro));
+
+//-----------------------------------/----------------------------------------------
+//arrays em javascript são estruturas de dados que permitem
+//armazenar uma coleção ordenada de elementos.
+
+let primeiroarray = ['Lucas','João','Paulo','Marcos'];
+
+//console.log(primeiroarray[2]); //numero 2 para percorrer o array
+
+//----------------------------------/----------------------------------------------------
+
+//Os objetos são coleções NÃO ORDENADAS de pares chave-valor
+//a uma chave única 
+
+let pessoa = {
+  nome: 'Maria',
+  idade: '22',
+  profissao:'Programadora'
+}
+  //console.log(pessoa['idade']);
+
+  //--------------------------------------/--------------------------------------
+
+  const numeros= ["A","B","C","D"]
+
+  numeros.forEach(num => {
+    console.log(num)
+
+  })
 
 });
