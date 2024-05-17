@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+/* style do titulo do elemento */
+h1 {
+  margin: 0;
+}
+/*esse é o style do cabeçalho */
+header {
+  background-color: #002352;
+  display: flex;
+  justify-content: space-between; /*So funciona com display flex */
+  padding: 10px;
+}
+#box-ordenar button {
+  background-color: color greenyellow;
+}
+#box-categorias button {
+  background-color: #4caf50;
+}
+#box-categorias button,
+#box-ordenar button {
+  background-color: #4caf50;
+  border: 0;
+  color: #fff;
+  padding: 10px 20px; /*espaçamento das margens */
+  border-radius: 30px; /*bordas arredondadas */
+}
