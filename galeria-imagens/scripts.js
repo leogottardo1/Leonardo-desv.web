@@ -2,10 +2,25 @@ document.addEventListener('DOMContentLoaded',function(){
     
     const baseimagens = {
         todas: ['imagem.jpg', 'cidade.jpg', 'animal.jpg', 'natureza.jpg'],
-        natureza: [],
-        cidade: [],
-        animais: [],
+        natureza: ['natureza.jpg'],
+        cidade: ['cidade.jpg'],
+        animais: ['animal.jpg'],
     }
+
+function carregaImagens(){
+    //selecionar elementos HTML com base em um seletor
+    const galeria = document.querySelector("#galeria-imagens");
+
+    const imagens = baseimagens['todas'];
+
+    imagens.forEach(img => { 
+    console.log(img);
+        galeria.innerHTML = '<div> <img src="imagens/'+img+'"/>  </div>'
+    })
+
+}
+
+carregaImagens();
 
     //evento de click
     document.body.addEventListener('click', function(event) {
