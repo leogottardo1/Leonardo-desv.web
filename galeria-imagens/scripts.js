@@ -31,11 +31,17 @@ function ordenaImagens(ordem){
 
 }
 
+<<<<<<< HEAD
+=======
+carregaImagens();
+
+>>>>>>> a693d6cc0b1872f58fef13c0540f4a38df278444
     //evento de click
     document.body.addEventListener('click', function(event) {
         //acessa a lista de classe de onde clicou e 
         //procura pela classe botao-categoria
         if (event.target.classList.contains('botao-categoria')) { 
+<<<<<<< HEAD
           
             const categoria = event.target.dataset.categoria;
             carregaImagens(categoria);
@@ -46,5 +52,10 @@ function ordenaImagens(ordem){
     }
 })
 carregaImagens('todas');
+=======
+            alert(321);
+        }
+    })
+>>>>>>> a693d6cc0b1872f58fef13c0540f4a38df278444
 
 })
