@@ -26,3 +26,15 @@ header {
   padding: 10px 20px; /*espaçamento das margens */
   border-radius: 30px; /*bordas arredondadas */
 }
+
+#galeria-imagens{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+  
+
+#galeria-imagens img{
+  max-width: 100%;
+
+  }

@@ -12,14 +12,16 @@
     <header>
         <div><h1>Galeria de imagens</h1></div>
         <div Id="box-ordenar">
-            <button> Ordem A-Z </button>
-            <button> Ordem Z-A </button>
+            <button class="botao-ordenar" data-ordem="asc"> Ordem A-Z </button>
+            <button class="botao-ordenar" data-ordem="desc"> Ordem Z-A </button>
         </div>
         <div Id="box-categorias">
-            <button class="botao-categoria"> Todas </button>
-            <button class="botao-categoria"> Natureza </button>
-            <button class="botao-categoria"> Cidade </button>
-            <button class="botao-categoria"> Animais </button>
+            <button class="botao-categoria" data-categoria= "todas" >
+                todas
+            </button>
+            <button class="botao-categoria"data-categoria="natureza"> natureza </button>
+            <button class="botao-categoria"data-categoria="cidade"> cidade </button>
+            <button class="botao-categoria"data-categoria="animais"> animais </button>
         </div>
     </header>
     <main id="galeria-imagens">
